@@ -1,11 +1,9 @@
 // @group vmenu
 .vmenu {
+	font-size: 14px;
 	font-weight: bold;
 	line-height: 30px;
-	padding: 26px 0 0 0;
-	width: 233px;
-	background: url('../images/bg_menuTop.png') left top no-repeat;
-	margin-top: -8px;
+	padding: 0;
 	
 	.menu {
 		margin: 0;
@@ -14,17 +12,15 @@
 	}
 	
 	li {
-		background: url('../images/bg_menuMiddle.png') left top repeat-y;
+		padding: 0 17px;
 		
 		li {
 			font-size: 12px;
 			background-image: none;
-			padding-right: 10px;
 		}
 	}
 	
 	a {
-		padding: 0 10px;
 		color: $text;
 		&:hover {
 			color: $gold;
