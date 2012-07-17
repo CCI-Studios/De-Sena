@@ -11,3 +11,23 @@
 /* TODO Update selection BG color */
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+
+*.button {
+	background: url('../images/button.png') top left no-repeat;
+	padding-left: 25px;
+	line-height: 30px;
+	@include hasLayout;
+	
+	color: $text;
+	font-weight: bold;
+	
+	&:hover {
+		color: $gold;
+	}
+	
+	span {
+		background: url('../images/button.png') bottom right no-repeat;
+		padding-right: 25px;
+		@include hasLayout;
+	}
+}
