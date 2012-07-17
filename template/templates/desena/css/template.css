@@ -368,7 +368,7 @@ table {
 body, select, input, textarea {
   color: #444;
   /* off black */
-  font-family: Helvetica, Arial, sans-serif; }
+  font-family: Arial, Helvetica,sans-serif; }
 
 * {
   -moz-box-sizing: border-box;
@@ -379,13 +379,21 @@ body, select, input, textarea {
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-family: "Arial Narrow";
+  font-weight: bold;
+  color: #0c522e;
+  margin-top: 0; }
 
-h1 {
-  font-size: 2em; }
+h1,
+.module h3 {
+  font-size: 24px; }
+
+.page-title h1,
+.slideshow h1 {
+  color: #fff; }
 
 h2 {
-  font-size: 1.8em; }
+  font-size: 18px; }
 
 h3 {
   font-size: 1.6em; }
@@ -609,33 +617,59 @@ div.container
   .row-24 .span-24 {
     width: 940px; }
 
-.hmenu .menu {
-  margin: 0;
-  padding: 0; }
-.hmenu .menu > li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-  position: relative;
-  padding: 0 5px; }
-.hmenu .menu > li > a,
-.hmenu .menu > li > span {
-  display: block; }
-.hmenu ul ul {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin: 0;
-  padding: 0; }
-  .hmenu ul ul li {
-    white-space: nowrap; }
+body {
+  border-top: 5px solid #0c522e; }
 
-.vmenu .menu {
-  margin: 0;
-  padding: 0; }
-.vmenu ul ul {
-  margin: 0.5em 0 1em 1em;
-  list-style: none; }
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+#header {
+  padding: 17px 0 37px;
+  text-align: center; }
+
+#masthead {
+  height: 280px;
+  background: url("../images/bg_mastheadRepeat.jpg") top center repeat-x; }
+
+#sidebar1 {
+  float: left; }
+
+.module.masthead {
+  padding: 20px 0;
+  font-size: 12px;
+  color: white; }
+  .module.masthead h3 {
+    color: #fff; }
+
+.vmenu {
+  font-weight: bold;
+  line-height: 30px;
+  padding: 26px 0 0 0;
+  width: 233px;
+  background: url("../images/bg_menuTop.png") left top no-repeat;
+  margin-top: -8px; }
+  .vmenu .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .vmenu li {
+    background: url("../images/bg_menuMiddle.png") left top repeat-y; }
+    .vmenu li li {
+      font-size: 12px;
+      background-image: none;
+      padding-right: 10px; }
+  .vmenu a {
+    padding: 0 10px;
+    color: #323232; }
+    .vmenu a:hover {
+      color: #a88b49;
+      text-decoration: none; }
+  .vmenu ul ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
 
 .clr, .clear {
   clear: both; }
