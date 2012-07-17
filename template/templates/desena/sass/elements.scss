@@ -14,13 +14,29 @@ body, select, input, textarea {
 	*behavior: url(/templates/default/resources/boxsizing.htc); // IE7 only
 }
 
+
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
+	font-family: "Arial Narrow";
 	font-weight: bold;
+	color: $green;
+	margin-top: 0;
 }
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.8em; }
+h1, 
+.module h3 { 
+	font-size: 24px;
+}
+
+.page-title h1,
+.slideshow h1 {
+	color: #fff;
+}
+
+h2 { 
+	font-size: 18px; 
+}
+
 h3 { font-size: 1.6em; }
 h4 { font-size: 1.4em; }
 h5 { font-size: 1.2em; }
