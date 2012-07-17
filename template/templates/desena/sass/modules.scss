@@ -1,12 +1,16 @@
 // @group modules
 .module {} // DO NOT TOUCH
 
-.module.masthead {
-	padding: 20px 0;
+.module.slideshow {
 	font-size: 12px;
+	margin-left: 240px;
+	padding: 0;
 	color: white;
+	background: bottom left no-repeat;
+	overflow: auto;
 	
 	h3 {
 		color: #fff;
 	}
+}
 }
