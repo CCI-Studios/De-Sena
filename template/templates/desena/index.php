@@ -89,14 +89,19 @@ $typekit = null;
 					<jdoc:include type="modules" name="sidebar2" style="rounded" />
 				</div>
 			</div>
-		
-			<div id="footer">
-				<jdoc:include type="modules" name="footer" style="rounded" />
-			</div>
+			<div class="clear"></div>
 		</div>
-
-			<?php if ($this->countModules('sidebar2')): ?>
-			<?php endif; ?>
+		
+		<div id="footer"><div class="container">
+			<div class="left">
+				&copy; Francis De Sena <?php echo date('Y') ?>. All Rights Reserved.
+			</div>
+			<div class="right">
+				Site by <a href="http://ccistudios.com">CCI Studios</a>
+			</div>
+			<div class="clear"></div>
+		</div></div>
+		
 	</div>
 
 	<div class="hidden">
