@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: "Arial Narrow";
 	font-weight: bold;
 	color: $green;
-	margin-top: 0;
 }
 
 h1, 
@@ -44,10 +43,10 @@ h5 { font-size: 1.2em; }
 h6 { font-size: 1.0em; }
 
 a, a:active, a:visited {
-	color: red;
+	color: $text;
 	text-decoration: none;
 }
 a:hover {
-	color: teal;
+	color: $gold;
 	text-decoration: underline;
 }
