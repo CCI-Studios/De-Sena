@@ -2,6 +2,10 @@ body {
 	border-top: 5px solid $green;
 	background: url('../images/bg_footerRepeat.jpg') repeat;
 }
+
+#wrapper {
+	min-width: 960px;
+	background-color: white;
 }
 
 .container {
