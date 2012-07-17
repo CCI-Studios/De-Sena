@@ -1,4 +1,12 @@
 // @group modules
 .module {} // DO NOT TOUCH
-.module h3 {} // DO TOUCH
 
+.module.masthead {
+	padding: 20px 0;
+	font-size: 12px;
+	color: white;
+	
+	h3 {
+		color: #fff;
+	}
+}
