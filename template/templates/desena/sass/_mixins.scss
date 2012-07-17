@@ -6,3 +6,9 @@
 	&:after { clear:both; }
 	& { zoom:1; }
 }
+
+@mixin hasLayout {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
