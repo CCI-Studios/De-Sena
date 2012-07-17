@@ -26,4 +26,13 @@ body {
 
 #sidebar1 {
 	float: left;
+	width: 234px;
+	margin: -8px 0 0 -4px;
+	background: url('../images/bg_menuTop.png') left top no-repeat;
+	
+	> div {
+		background: url('../images/bg_menuMiddle.png') left top repeat-y;
+		margin-top: 26px;
+	}
+}
 }
