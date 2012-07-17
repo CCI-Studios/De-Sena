@@ -13,4 +13,12 @@
 		color: #fff;
 	}
 }
+
+#sidebar2 .module {
+	border-bottom: 1px solid $border;
+	border-top: 1px solid white;
+	padding: 0 0 20px 20px;
+	&:first-child {
+		border-top: 0;
+	}
 }
