@@ -95,6 +95,7 @@ $typekit = null;
 		</div>
 		
 		<div id="footer"><div class="container">
+		<div id="footer"><div class="container"><div>
 			<div class="left">
 				&copy; Francis De Sena <?php echo date('Y') ?>. All Rights Reserved.
 			</div>
@@ -102,7 +103,7 @@ $typekit = null;
 				Site by <a href="http://ccistudios.com">CCI Studios</a>
 			</div>
 			<div class="clear"></div>
-		</div></div>
+		</div></div></div>
 		
 	</div>
 
