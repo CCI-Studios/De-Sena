@@ -73,10 +73,12 @@ $typekit = null;
 			</div>
 		</div>
 		
+		<div id="sidebar1"><div><div><div><div>
+			<jdoc:include type="modules" name="sidebar1" style="rounded" />
+			<div class="clear"></div>
+		</div></div></div></div></div>
+		
 		<div id="masthead"><div class="container">
-			<div id="sidebar1"><div>
-				<jdoc:include type="modules" name="sidebar1" style="rounded" />
-			</div></div>
 			<jdoc:include type="modules" name="masthead" style="rounded" />
 		</div></div>
 		
