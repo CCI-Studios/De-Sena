@@ -382,7 +382,8 @@ body, select, input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Arial Narrow";
   font-weight: bold;
-  color: #0c522e; }
+  color: #0c522e;
+  margin-bottom: .67em; }
 
 h1,
 .module h3 {
@@ -619,16 +620,19 @@ div.container
 
 body {
   border-top: 5px solid #0c522e;
-  background: url("../images/bg_footerRepeat.jpg") repeat; }
+  background: url("../images/bg_body.jpg") repeat; }
 
 #wrapper {
   min-width: 960px;
-  background-color: white; }
+  background-color: white;
+  position: relative; }
 
 .container {
-  width: 940px;
+  width: 960px;
   padding: 0 10px;
   margin: 0 auto; }
+  #main .container {
+    background: url("../images/bg_mainRepeat.png") top center repeat-y; }
 
 #header {
   padding: 17px 0 37px;
@@ -638,32 +642,51 @@ body {
   height: 280px;
   background: url("../images/bg_mastheadRepeat.jpg") top center repeat-x; }
 
+#main {
+  background: url("../images/bg_footerShadow.png") bottom center no-repeat; }
+
 #sidebar1 {
-  float: left;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
   width: 234px;
-  margin: -8px 0 0 -4px;
-  background: url("../images/bg_menuTop.png") left top no-repeat; }
+  margin-left: -484px; }
   #sidebar1 > div {
+    height: 100%;
+    padding: 108px 10px 92px; }
+  #sidebar1 > div > div {
+    width: 234px;
+    height: 100%;
+    margin: -8px 0 0;
+    background: url("../images/bg_menuTop.png") left top no-repeat;
+    padding-top: 26px; }
+  #sidebar1 > div > div > div {
+    height: 100%;
     background: url("../images/bg_menuMiddle.png") left top repeat-y;
-    margin-top: 26px; }
+    position: relative; }
 
 #comp {
   float: left;
-  width: 460px;
-  padding: 0 20px 0 10px; }
+  width: 471px;
+  padding: 0 20px 0 21px;
+  margin-left: 230px; }
 
 #sidebar2 {
   float: left;
-  width: 220px;
-  padding: 0 0 20px 0;
-  border-left: 1px solid #e6e6e6;
-  background: url("../images/bg_sidebar.jpg") top left no-repeat; }
+  width: 239px;
+  padding: 0;
+  background: url("../images/bg_sidebar2.png") top left no-repeat;
+  min-height: 416px; }
 
 #footer {
   background: url("../images/bg_footerRepeat.jpg") top center repeat-x;
-  padding: 20px 0;
   font-size: 10px;
-  color: white; }
+  color: white;
+  height: 100px; }
+  #footer > div {
+    background: url("../images/bg_footerRepeat.jpg") top center repeat-x;
+    padding: 20px 10px; }
   #footer a {
     color: white; }
 
@@ -678,28 +701,38 @@ body {
     color: #fff; }
 
 #sidebar2 .module {
-  border-bottom: 1px solid #e6e6e6;
-  border-top: 1px solid white;
-  padding: 0 0 20px 20px; }
+  padding: 16px 0 18px 20px;
+  background: url("../images/divider-sidebar2.jpg") top left no-repeat; }
   #sidebar2 .module:first-child {
-    border-top: 0; }
+    background: none; }
+  #sidebar2 .module h3 {
+    margin-top: 0; }
+
+.module.logo-bottom {
+  position: absolute;
+  left: 25px;
+  bottom: 0; }
 
 .vmenu {
   font-size: 14px;
   font-weight: bold;
   line-height: 30px;
-  padding: 0; }
+  padding: 0;
+  margin-left: 4px;
+  width: 220px; }
   .vmenu .menu {
     margin: 0;
     padding: 0;
     list-style: none; }
-  .vmenu li {
-    padding: 0 17px; }
-    .vmenu li li {
-      font-size: 12px;
-      background-image: none; }
+    .vmenu .menu > li {
+      border-top: 1px solid #e6e6e6; }
+      .vmenu .menu > li:hover {
+        background: url("../images/menu_rollover.png") 95% center no-repeat; }
+      .vmenu .menu > li.parent:hover {
+        background: url("../images/menu_rollover.png") 95% 6px no-repeat; }
   .vmenu a {
-    color: #323232; }
+    color: #323232;
+    padding: 0 17px; }
     .vmenu a:hover {
       color: #a88b49;
       text-decoration: none; }
@@ -707,6 +740,13 @@ body {
     margin: 0;
     padding: 0;
     list-style: none; }
+    .vmenu ul ul li {
+      font-size: 12px;
+      border-top: 1px solid #e6e6e6; }
+      .vmenu ul ul li:hover {
+        background: url("../images/menu_rollover.png") 95% center no-repeat; }
+      .vmenu ul ul li a {
+        padding: 0 17px 0 32px; }
 
 .clr, .clear {
   clear: both; }
