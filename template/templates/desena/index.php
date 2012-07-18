@@ -82,19 +82,16 @@ $typekit = null;
 			<jdoc:include type="modules" name="masthead" style="rounded" />
 		</div></div>
 		
-		<div class="container">
-			<div id="main">
-				<div id="comp">
-					<jdoc:include type="component" />
-				</div>
-				<div id="sidebar2">
-					<jdoc:include type="modules" name="sidebar2" style="rounded" />
-				</div>
+		<div id="main"><div class="container">
+			<div id="comp">
+				<jdoc:include type="component" />
+			</div>
+			<div id="sidebar2">
+				<jdoc:include type="modules" name="sidebar2" style="rounded" />
 			</div>
 			<div class="clear"></div>
-		</div>
-		
-		<div id="footer"><div class="container">
+		</div></div>
+
 		<div id="footer"><div class="container"><div>
 			<div class="left">
 				&copy; Francis De Sena <?php echo date('Y') ?>. All Rights Reserved.
