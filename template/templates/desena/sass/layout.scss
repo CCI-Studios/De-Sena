@@ -34,14 +34,30 @@ body {
 }
 
 #sidebar1 {
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	height: 100%;
 	width: 234px;
-	margin: -8px 0 0 -4px;
-	background: url('../images/bg_menuTop.png') left top no-repeat;
+	margin-left: -484px;
 	
 	> div {
+		height: 100%;
+		padding: 108px 10px 92px;
+	}
+	
+	> div > div {
+		width: 234px;
+		height: 100%;
+		margin: -8px 0 0;
+		background: url('../images/bg_menuTop.png') left top no-repeat;
+		padding-top: 26px;
+	}
+	
+	> div > div > div {
+		height: 100%;
 		background: url('../images/bg_menuMiddle.png') left top repeat-y;
-		margin-top: 26px;
+		position: relative;
 	}
 }
 
