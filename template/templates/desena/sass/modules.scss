@@ -21,4 +21,8 @@
 	&:first-child {
 		border-top: 0;
 	}
+.module.logo-bottom {
+	position: absolute;
+	left: 25px;
+	bottom: 0;
 }
