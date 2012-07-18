@@ -4,24 +4,29 @@
 	font-weight: bold;
 	line-height: 30px;
 	padding: 0;
+	margin-left: 4px;
+	width: 220px;
 	
 	.menu {
 		margin: 0;
 		padding: 0;
 		list-style: none;
-	}
-	
-	li {
-		padding: 0 17px;
 		
-		li {
-			font-size: 12px;
-			background-image: none;
+		> li {
+			border-top: 1px solid $border;
+			&:hover {
+				background: url('../images/menu_rollover.png') 95% center no-repeat;
+			}
+			
+			&.parent:hover {
+				background: url('../images/menu_rollover.png') 95% 6px no-repeat;
+			}
 		}
 	}
 	
 	a {
 		color: $text;
+		padding: 0 17px;
 		&:hover {
 			color: $gold;
 			text-decoration: none;
@@ -32,5 +37,17 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		
+		li {
+			font-size: 12px;
+			border-top: 1px solid $border;
+			&:hover {
+				background: url('../images/menu_rollover.png') 95% center no-repeat;
+			}
+			
+			a {
+				padding: 0 17px 0 32px;
+			}
+		}
 	}
 }
