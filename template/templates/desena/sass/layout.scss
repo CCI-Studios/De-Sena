@@ -78,9 +78,14 @@ body {
 
 #footer {
 	background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
-	padding: 20px 0;
 	font-size: 10px;
 	color: white;
+	height: 100px;
+
+	> div {
+		background: url('../images/bg_footerRepeat.jpg') top center repeat-x;
+		padding: 20px 10px;
+	}
 	
 	a {
 		color: white;
