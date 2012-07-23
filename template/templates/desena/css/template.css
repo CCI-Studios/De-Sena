@@ -397,7 +397,7 @@ h1,
   margin: -50px 0 45px;
   font-weight: normal; }
   .home .item-page h1 {
-    margin: .67em 0;
+    margin: 1em 0;
     color: #0c522e;
     font-weight: bold; }
 
@@ -648,7 +648,7 @@ body {
   margin: 0 auto; }
   #main .container {
     background: url("../images/bg_mainRepeat.png") top center repeat-y;
-    min-height: 500px; }
+    min-height: 640px; }
 
 #header {
   padding: 17px 0 37px;
@@ -708,7 +708,7 @@ body {
     color: white; }
 
 #masthead .module {
-  margin-left: 240px; }
+  margin-left: 250px; }
 
 .module.slideshow {
   font-size: 12px;
@@ -716,6 +716,7 @@ body {
   color: white;
   overflow: auto; }
   .module.slideshow h3 {
+    font-weight: lighter;
     color: #fff; }
 
 .module.page-title {
@@ -730,9 +731,10 @@ body {
   padding: 16px 0 18px 20px;
   background: url("../images/divider-sidebar2.jpg") top left no-repeat; }
   #sidebar2 .module:first-child {
+    padding-top: 26px;
     background: none; }
   #sidebar2 .module h3 {
-    margin-top: 0; }
+    margin: 0 0 .4em; }
 
 .module.logo-bottom {
   position: absolute;
@@ -747,7 +749,7 @@ body {
 .vmenu {
   font-size: 14px;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 36px;
   padding: 0;
   margin-left: 4px;
   width: 220px; }
@@ -831,6 +833,14 @@ body {
     display: inline-block;
     *display: inline;
     *zoom: 1; }
+
+.char1 {
+  font-family: Century, Georgia, Times, Arial, Helvetica, sans-serif;
+  float: left;
+  font-size: 58px;
+  line-height: 48px;
+  margin-right: 8px;
+  color: #a88b49; }
 
 ul.sigProClassic {
   margin-left: -10px !important;
