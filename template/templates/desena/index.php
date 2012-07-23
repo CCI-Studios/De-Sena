@@ -93,7 +93,7 @@ $typekit = null;
 		</div></div>
 
 		<div id="footer"><div class="container"><div>
-			<div class="left">
+			<div class="copyright left">
 				&copy; Francis De Sena <?php echo date('Y') ?>. All Rights Reserved.
 			</div>
 			<div class="right">
