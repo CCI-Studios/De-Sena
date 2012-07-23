@@ -16,6 +16,17 @@
 	}
 }
 
+.module.page-title {
+	height: 76px;
+	position: relative;
+	
+	img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+}
+
 #sidebar2 .module {
 	padding: 16px 0 18px 20px;
 	background: url('../images/divider-sidebar2.jpg') top left no-repeat;
