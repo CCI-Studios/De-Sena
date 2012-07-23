@@ -27,7 +27,7 @@ body {
 
 #masthead {
 	background: url('../images/bg_mastheadRepeat.jpg') top center repeat-x;
-	height: 76px;
+	min-height: 76px;
 	.home & {
 		height: 280px;
 	}
