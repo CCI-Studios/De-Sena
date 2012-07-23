@@ -394,7 +394,7 @@ h1,
   color: #fff; }
 
 .item-page h1 {
-  margin: -50px 0 60px;
+  margin: -50px 0 45px;
   font-weight: normal; }
   .home .item-page h1 {
     margin: .67em 0;
@@ -423,6 +423,13 @@ a, a:active, a:visited {
 a:hover {
   color: #a88b49;
   text-decoration: underline; }
+
+.item-page ul {
+  padding-left: 10px;
+  list-style: none; }
+  .item-page ul li {
+    padding-left: 10px;
+    background: url("../images/bullet.png") left 5px no-repeat; }
 
 /* forms */
 /* Align checkboxes, radios, text inputs with their label by: Thierry Koblentz tjkdesign.com/ez-css/css/base.css  */
