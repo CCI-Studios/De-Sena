@@ -1,12 +1,14 @@
 // @group modules
 .module {} // DO NOT TOUCH
 
+#masthead .module {
+	margin-left: 240px;
+}
+
 .module.slideshow {
 	font-size: 12px;
-	margin-left: 240px;
 	padding: 0;
 	color: white;
-	background: bottom left no-repeat;
 	overflow: auto;
 	
 	h3 {
