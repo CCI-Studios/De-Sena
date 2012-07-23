@@ -29,9 +29,20 @@ h1,
 	font-size: 24px;
 }
 
-.page-title h1,
+.item-page h1,
 .slideshow h1 {
 	color: #fff;
+}
+
+.item-page h1 {
+	margin: -50px 0 60px;
+	font-weight: normal;
+	
+	.home & {
+		margin: .67em 0;
+		color: $green;
+		font-weight: bold;
+	}
 }
 
 h2 { 
