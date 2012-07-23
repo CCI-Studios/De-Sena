@@ -62,3 +62,12 @@ a:hover {
 	color: $gold;
 	text-decoration: underline;
 }
+
+.item-page ul {
+	padding-left: 10px;
+	list-style: none;
+	li {
+		padding-left: 10px;
+		background: url('../images/bullet.png') left 5px no-repeat;
+	}
+}
