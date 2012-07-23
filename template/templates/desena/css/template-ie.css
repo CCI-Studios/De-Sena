@@ -389,9 +389,17 @@ h1,
 .module h3 {
   font-size: 24px; }
 
-.page-title h1,
+.item-page h1,
 .slideshow h1 {
   color: #fff; }
+
+.item-page h1 {
+  margin: -50px 0 60px;
+  font-weight: normal; }
+  .home .item-page h1 {
+    margin: .67em 0;
+    color: #0c522e;
+    font-weight: bold; }
 
 h2 {
   font-size: 18px; }
@@ -632,14 +640,16 @@ body {
   padding: 0 10px;
   margin: 0 auto; }
   #main .container {
-    background: url("../images/bg_mainRepeat.png") top center repeat-y; }
+    background: url("../images/bg_mainRepeat.png") top center repeat-y;
+    min-height: 500px; }
 
 #header {
   padding: 17px 0 37px;
   text-align: center; }
 
 #masthead {
-  background: url("../images/bg_mastheadRepeat.jpg") top center repeat-x; }
+  background: url("../images/bg_mastheadRepeat.jpg") top center repeat-x;
+  height: 76px; }
   .home #masthead {
     height: 280px; }
 
@@ -677,8 +687,7 @@ body {
   float: left;
   width: 239px;
   padding: 0;
-  background: url("../images/bg_sidebar2.png") top left no-repeat;
-  min-height: 416px; }
+  background: url("../images/bg_sidebar2.png") top left no-repeat; }
 
 #footer {
   background: url("../images/bg_footerRepeat.jpg") top center repeat-x;
@@ -726,28 +735,37 @@ body {
   .vmenu .menu {
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    border-bottom: 1px solid #f1f1f1; }
     .vmenu .menu > li {
-      border-top: 1px solid #e6e6e6; }
+      border-top: 1px solid #f1f1f1; }
       .vmenu .menu > li:hover {
-        background: url("../images/menu_rollover.png") 95% center no-repeat; }
+        background: #f2f2f2 url("../images/menu_rollover.png") 95% center no-repeat; }
+        .vmenu .menu > li:hover a {
+          color: #a88b49;
+          text-decoration: none; }
       .vmenu .menu > li.parent:hover {
-        background: url("../images/menu_rollover.png") 95% 6px no-repeat; }
+        background: #f2f2f2 url("../images/menu_rollover.png") 95% 6px no-repeat; }
+        .vmenu .menu > li.parent:hover ul {
+          background-color: white; }
+          .vmenu .menu > li.parent:hover ul li a {
+            color: #323232; }
+          .vmenu .menu > li.parent:hover ul li:hover a {
+            color: #a88b49; }
+  .vmenu li {
+    margin-bottom: 1px; }
   .vmenu a {
     color: #323232;
     padding: 0 17px; }
-    .vmenu a:hover {
-      color: #a88b49;
-      text-decoration: none; }
   .vmenu ul ul {
     margin: 0;
-    padding: 0;
+    padding: 1px 0 0;
     list-style: none; }
     .vmenu ul ul li {
       font-size: 12px;
-      border-top: 1px solid #e6e6e6; }
+      border-top: 1px solid #f1f1f1; }
       .vmenu ul ul li:hover {
-        background: url("../images/menu_rollover.png") 95% center no-repeat; }
+        background: #f2f2f2 url("../images/menu_rollover.png") 95% center no-repeat; }
       .vmenu ul ul li a {
         padding: 0 17px 0 32px; }
 
@@ -768,12 +786,12 @@ body {
    Also: hot pink! */
 /* TODO Update selection BG color */
 ::-moz-selection {
-  background: #FF5E99;
+  background: #a88b49;
   color: #fff;
   text-shadow: none; }
 
 ::selection {
-  background: #FF5E99;
+  background: #a88b49;
   color: #fff;
   text-shadow: none; }
 
