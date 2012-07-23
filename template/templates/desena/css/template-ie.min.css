@@ -639,8 +639,9 @@ body {
   text-align: center; }
 
 #masthead {
-  height: 280px;
   background: url("../images/bg_mastheadRepeat.jpg") top center repeat-x; }
+  .home #masthead {
+    height: 280px; }
 
 #main {
   background: url("../images/bg_footerShadow.png") bottom center no-repeat; }
@@ -690,12 +691,13 @@ body {
   #footer a {
     color: white; }
 
+#masthead .module {
+  margin-left: 240px; }
+
 .module.slideshow {
   font-size: 12px;
-  margin-left: 240px;
   padding: 0;
   color: white;
-  background: bottom left no-repeat;
   overflow: auto; }
   .module.slideshow h3 {
     color: #fff; }
@@ -711,7 +713,8 @@ body {
 .module.logo-bottom {
   position: absolute;
   left: 25px;
-  bottom: 0; }
+  bottom: 0;
+  margin: 1em 0; }
 
 .vmenu {
   font-size: 14px;
