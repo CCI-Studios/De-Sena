@@ -11,38 +11,56 @@
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		border-bottom: 1px solid $border;
 		
 		> li {
 			border-top: 1px solid $border;
 			&:hover {
-				background: url('../images/menu_rollover.png') 95% center no-repeat;
+				background: #f2f2f2 url('../images/menu_rollover.png') 95% center no-repeat;
+				
+				a {
+					color: $gold;
+					text-decoration: none;
+				}
 			}
 			
 			&.parent:hover {
-				background: url('../images/menu_rollover.png') 95% 6px no-repeat;
+				background: #f2f2f2 url('../images/menu_rollover.png') 95% 6px no-repeat;
+				
+				ul {
+					background-color: white;
+					
+					li a {
+						color: $text;
+					}
+					
+					li:hover a {
+						color: $gold;
+					}
+				}
 			}
 		}
+	}
+	
+	li {
+		margin-bottom: 1px;
 	}
 	
 	a {
 		color: $text;
 		padding: 0 17px;
-		&:hover {
-			color: $gold;
-			text-decoration: none;
-		}
 	}
 
 	ul ul { // submenus
 		margin: 0;
-		padding: 0;
+		padding: 1px 0 0;
 		list-style: none;
 		
 		li {
 			font-size: 12px;
 			border-top: 1px solid $border;
 			&:hover {
-				background: url('../images/menu_rollover.png') 95% center no-repeat;
+				background: #f2f2f2 url('../images/menu_rollover.png') 95% center no-repeat;
 			}
 			
 			a {
