@@ -649,7 +649,7 @@ body {
 
 #masthead {
   background: url("../images/bg_mastheadRepeat.jpg") top center repeat-x;
-  height: 76px; }
+  min-height: 76px; }
   .home #masthead {
     height: 280px; }
 
@@ -710,6 +710,14 @@ body {
   overflow: auto; }
   .module.slideshow h3 {
     color: #fff; }
+
+.module.page-title {
+  height: 76px;
+  position: relative; }
+  .module.page-title img {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
 
 #sidebar2 .module {
   padding: 16px 0 18px 20px;
@@ -812,6 +820,27 @@ body {
     display: inline-block;
     *display: inline;
     *zoom: 1; }
+
+ul.sigProClassic {
+  margin-left: -10px !important;
+  padding-top: 0 !important; }
+  .module ul.sigProClassic {
+    margin-left: -14px !important; }
+
+ul.sigProClassic li.sigProThumb {
+  margin: 0 0 10px 10px;
+  padding: 0; }
+  .module ul.sigProClassic li.sigProThumb {
+    margin: 0 0 10px 14px; }
+
+ul.sigProClassic li.sigProThumb span.sigProLinkOuterWrapper {
+  margin: 0;
+  padding: 0; }
+
+ul.sigProClassic li.sigProThumb span.sigProLinkWrapper {
+  margin: 0;
+  padding: 2px;
+  background: white; }
 
 .phone-visible, .mobile-visible,
 .tablet-hidden, .desktop-hidden {
