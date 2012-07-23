@@ -31,3 +31,12 @@
 		@include hasLayout;
 	}
 }
+
+.char1 {
+	font-family: Century, Georgia, Times, Arial, Helvetica,sans-serif;
+	float: left;
+	font-size: 58px;
+	line-height: 48px;
+	margin-right: 8px;
+	color: $gold;
+}
