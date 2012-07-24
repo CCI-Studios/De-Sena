@@ -376,7 +376,7 @@ body, select, input, textarea {
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
-  *behavior: url(/templates/default/resources/boxsizing.htc); }
+  *behavior: url(/templates/desena/resources/boxsizing.htc); }
 
 /* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
 h1, h2, h3, h4, h5, h6 {
@@ -712,12 +712,13 @@ body {
 
 .module.slideshow {
   font-size: 12px;
-  padding: 0;
+  padding: 30px 0;
   color: white;
   overflow: auto; }
   .module.slideshow h3 {
     font-weight: lighter;
-    color: #fff; }
+    color: #fff;
+    margin-top: 0; }
 
 .module.page-title {
   height: 76px;
@@ -737,8 +738,8 @@ body {
     margin: 0 0 .4em; }
 
 .module.logo-bottom {
+  width: 98%;
   position: absolute;
-  left: 25px;
   bottom: 0;
   margin: 1em 0; }
 
@@ -777,7 +778,8 @@ body {
     margin-bottom: 1px; }
   .vmenu a {
     color: #323232;
-    padding: 0 17px; }
+    padding: 0 17px;
+    display: block; }
   .vmenu ul ul {
     margin: 0;
     padding: 1px 0 0;
