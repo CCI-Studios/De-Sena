@@ -37,6 +37,7 @@ h1,
 .item-page h1 {
 	margin: -50px 0 45px;
 	font-weight: normal;
+	*zoom: 1;
 	
 	.home & {
 		margin: 1em 0;

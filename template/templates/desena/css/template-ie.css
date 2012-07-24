@@ -395,7 +395,8 @@ h1,
 
 .item-page h1 {
   margin: -50px 0 45px;
-  font-weight: normal; }
+  font-weight: normal;
+  *zoom: 1; }
   .home .item-page h1 {
     margin: 1em 0;
     color: #0c522e;
